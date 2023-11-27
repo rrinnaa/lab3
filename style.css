@@ -1,0 +1,430 @@
+body {
+  background-image: url('gorod.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+.boy__box {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  margin: -300px -150px -200px 600px;
+
+  justify-self: right;
+  overflow: hidden;
+  border: 1px solid #fff;
+  background-image: linear-gradient(to, #4facfe 0%, #00f2fe 100%);
+
+  animation: ava-animate 5s infinite alternate;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+.boy__boy-img {
+  animation: ava-bg 3s infinite alternate;
+}
+
+@keyframes ava-animate {
+
+ 0% {
+    border-radius: 58% 42% 39% 61% / 68% 33% 67% 32%;
+    }
+    40% {
+        border-radius: 66% 34% 56% 44% / 53% 44% 56% 47%  ;
+    }
+    60% {
+        border-radius: 74% 26% 72% 28% / 38% 60% 40% 62%  ;
+    }
+    80% {
+        border-radius: 64% 36% 51% 49% / 43% 40% 60% 57%   ;
+    }
+    100%{
+        border-radius: 69% 31% 75% 25% / 31% 26% 74% 69%   ;
+    }
+}
+@keyframes ava-bg {
+    from {
+    backdrop-filter: hue-rotate(0);
+        }
+    to {
+    backdrop-filter: hue-rotate(90deg);
+    }
+}
+.girl__box {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin: -100px -150px -200px 550px;
+  justify-self: right;
+  overflow: hidden;
+  border: 1px solid #fff;
+
+  background-image: linear-gradient(to , #4facfe 0%, #00f2fe 100%);
+
+  animation: ava-animate 5s infinite alternate;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.girl__girl-png {
+  animation: ava-bg 3s infinite alternate;
+}
+@keyframes ava-animate {
+
+ 0% {
+    border-radius: 58% 42% 39% 61% / 68% 33% 67% 32%;
+    }
+    40% {
+        border-radius: 66% 34% 56% 44% / 53% 44% 56% 47%  ;
+    }
+    60% {
+        border-radius: 74% 26% 72% 28% / 38% 60% 40% 62%  ;
+    }
+    80% {
+        border-radius: 64% 36% 51% 49% / 43% 40% 60% 57%   ;
+    }
+    100%{
+        border-radius: 69% 31% 75% 25% / 31% 26% 74% 69%   ;
+    }
+}
+@keyframes ava-bg {
+    from {
+    backdrop-filter: hue-rotate(0);
+        }
+    to {
+    backdrop-filter: hue-rotate(90deg);
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 20px;
+    font-family: Arial;
+}
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+.row {
+    color: black;
+    margin: 10px -16px;
+}
+.row > .column {
+    padding: 8px;
+}
+.column {
+    float: left;
+    width: 25%;
+}
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    text-shadow: 3px 3px 3px rgba(123, 321, 231, 0.99);
+    background-color: lightpink;
+    padding: 10px;
+}
+img {
+	width: 100%;
+}
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.portfolio__btn {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  position: relative;
+   display: inline-block;
+   text-decoration: none;
+   padding: 10px 60px;
+   margin-right: 40px;
+   border: 1px solid #68E5F7;
+   background: transparent;
+   color: #fff;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   perspective: 500px;
+   background: white;
+   transition: .3s;
+}
+.portfolio__btn:last-of-type {
+   margin-right: 0;
+}
+.portfolio__btn span {
+   position: relative;
+   z-index: 2;
+}
+.portfolio__btn:before {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #68E5F7;
+   transform-origin: left;
+   transition: .5s;
+}
+.portfolio__btn:hover {
+   color: #68E5F7;
+   border-color: #68E5F7;
+}
+.portfolio__btn:hover:before {
+   transform: rotateY(92deg);
+}
+.Back__btn {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  position: relative;
+   display: inline-block;
+   text-decoration: none;
+   padding: 10px 60px;
+   margin-right: 40px;
+   border: 1px solid #68E5F7;
+   background: transparent;
+   color: #fff;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   perspective: 500px;
+   background: white;
+   transition: .3s;
+}
+.Back__btn:last-of-type {
+   margin-right: 0;
+}
+.Back__btn span {
+   position: relative;
+   z-index: 2;
+}
+.Back__btn:before {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #68E5F7;
+   transform-origin: left;
+   transition: .5s;
+}
+.Back__btn:hover {
+   color: #68E5F7;
+   border-color: #68E5F7;
+}
+.Back__btn:hover:before {
+   transform: rotateY(92deg);
+}
+.Lab1__btn {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+.Lab1__btn:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.Lab1__btn:hover {
+  background: peachpuff;
+  color: mediumpurple;
+}
+.Lab1__btn:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+.Lab2__btn {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+.Lab2__btn:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.Lab2__btn:hover {
+  background: peachpuff;
+  color: mediumpurple;
+}
+.Lab2__btn:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+.hide {
+  display: none !important;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.header {
+  padding: 5px;
+  background: #68E5F7;
+  border: 4px solid pink;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header__menu {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  font-size: 20px;
+}
+.header__menu {
+  position: relative;
+}
+.header__logo1 {
+    color: white;
+    font-size: 25px;
+    text-shadow: 3px 3px 3px rgba(199, 21, 133, 0.99);
+}
+.menu__btn {
+    font-size: 20px;
+    font-weight: normal;
+}
+.header__menu .menu__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header__menu .menu__btn svg {
+  width: 25px;
+  height: 25px;
+}
+.header__menu .menu__list {
+  margin: 0;
+  padding: 10px 20px;
+  list-style-type: none;
+  border-radius: 4px;
+  background: lightpink;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: menu-showing .3s;
+}
+
+.header__menu .menu__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  text-decoration: none;
+
+  @keyframes menu-showing {
+    from {
+      transform: translateY(95%);
+    }
+  }
+}
+.info__github {
+    padding: 2px;
+    text-decoration: none;
+}
+.info__github:hover {
+    background: DarkRed;
+    color: white;
+}
+.info__telega {
+    padding: 2px;
+    text-decoration: none;
+}
+.info__telega:hover {
+    background: DarkRed;
+    color: white;
+}
+.port__github1 {
+    text-decoration: none;
+   color: black;
+   text-shadow: 1px 1px pink;
+   letter-spacing: 1px;
+   border-bottom: 2px solid transparent;
+}
+.port__github1:hover {
+   color: crimson;
+   border-bottom: 2px solid #F54318;
+   box-shadow: 0 1px 0 deeppink, 0 2px 0 pink;
+
+}
+.port__github2 {
+   text-decoration: none;
+   color: black;
+   text-shadow: 1px 1px pink;
+   letter-spacing: 1px;
+   border-bottom: 2px solid transparent;
+}
+.port__github2:hover {
+   color: crimson;
+   border-bottom: 2px solid #F54318;
+   box-shadow: 0 1px 0 deeppink, 0 2px 0 pink;
+}
+.png_labacalc{
+    width: 550px;
+    height: 300px;
+}
+
+
+
+
+
+
